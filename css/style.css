@@ -109,6 +109,13 @@ body {
     cursor: pointer;
 }
 
+/* contact number in header
+.contact-number {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-left: 1rem;
+} */
+
 /* Hero grid to divide the page in 2 columns */
 .hero{
     padding:2.5rem 0;
