@@ -71,8 +71,9 @@ body {
 }
 
 .logo-credit {
-    font-size:0.68rem;
+    font-size:0.38rem;
     color: var(--muted);
+    text-align: center;
 }
 
 /* nav */
@@ -97,6 +98,15 @@ body {
     font-weight: 600;
     font-size: 0.95rem;
     font-family: "DM Sans", sans-serif;
+}
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    color: var(--primary);
+    cursor: pointer;
 }
 
 /* Hero grid to divide the page in 2 columns */
