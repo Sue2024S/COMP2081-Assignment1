@@ -134,6 +134,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap:1.5rem;
     background: rgba(255,255,255,0.7);
     border-radius: var(--radius);
@@ -161,6 +162,8 @@ body {
 
 .feature-figure {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 1rem;
     font-size: 0.95rem;
@@ -169,8 +172,8 @@ body {
 }
 
 .feature-figure img {
-    width: 120px;
-    height: 120px;
+    width: 320px;
+    height: 320px;
     object-fit: cover;
     border-radius: 6px;
     border: 1px solid rgba(0,0,0,0.04);
@@ -187,11 +190,12 @@ body {
     width: fit-content;
     box-shadow: 0 6px 18px rgba(5,89,42,0.08);
     font-family: "DM Sans", sans-serif;
+    align-items: center;
 }
 
 /* Right column-carousel created with Bootstrap */
 
-.hero-carousel {
+.carousel {
     align-self: stretch;
     position: relative;
     border-left: 6px solid var(--primary);
@@ -199,17 +203,42 @@ body {
     background: #fff;
 }
 
-.hero-carousel .carousel-item img {
+.carousel .carousel-item img {
     height: 100%;
     object-fit: cover;
-    min-height: 220px;
+    min-height: 100px;
 }
 
-/* .feature-figure {
+.carousel-caption {
+    color: #fff;
+    background: #0b2d1b;
+    padding: 0rem 1ch;
+    font-size: 0.9rem;
+    border-radius: var(--radius);
+    font-family: "DM Sans", sans-serif;
+}
+
+.zoomit {
+	animation: zoom-in-out .5s;
+}
+@keyframes zoom-in-out {
+	from {
+		transform: none;
+	}
+	50% {
+		transform: scale(1.4);
+		transform-origin: center top;
+	}
+	to {
+		transform: none;
+	}
+}
+
+.feature-figure {
   display: flex;
   align-items: center;
   gap: 1rem;
-} */
+}
 
 .promo-ticker {
     color:#fff;
@@ -258,7 +287,7 @@ footer {
         position: absolute;
         top: 100%;
         right: 0;
-        background: white;
+        background: var(--bg);
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
@@ -268,7 +297,7 @@ footer {
     }
 
     .main-nav.open {
-        display: flex; /* Visible only when JS adds the .open class */
+        display: flex; /* Visible only when JS adds the .open class-menu is open */
     }
 
      /* to stack links vertically when expanded-based on last semester example*/
@@ -281,7 +310,7 @@ footer {
     .nav-list a {
         width: 100%;
         padding: 0.5rem 0;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
     }
 
     .nav-toggle {
@@ -290,7 +319,8 @@ footer {
         border: none;
         cursor: pointer;
         margin-left: auto;
-        margin-left: auto;
+        font-size: 1.5rem;
+        color: var(--primary);
     }
 
     /* Header Layout */
