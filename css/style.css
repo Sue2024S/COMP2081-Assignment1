@@ -1,9 +1,24 @@
 @charset "UTF-8";
 /* Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jura:wght@300..700&display=swap');
-/* Colour palette decided to use based on the logo obtained from Logopond 
---primary: #05592A (green)
---bg: #F2F2F2 (secondary/background) */
+/* Colour palette decided to use based on the logo obtained from Logopond  */
+
+:root {
+    --primary: #05592A /* green */
+    /* main background*/
+    --bg:  #F2F2F2;
+    /* main body text */
+    --text: #0b2d1b;
+    /* low-emphasis text (captions, credits) */
+    --muted: #6c6c6c; 
+    --max-width: 1300px;
+    --gap: 2rem;
+    --radius: 6px;
+    --cta-radius: 30px;
+    /* typography */
+    --h1-min: 2.2rem;
+    --h1-max: 4.5rem;
+}
 
 /* General Styles */
 
