@@ -176,15 +176,29 @@ body {
     border: 1px solid rgba(0,0,0,0.04);
 }
 
+.btn.cta {
+    display: inline-block;
+    padding: 0.85rem 1.6rem;
+    border-radius: var(--cta-radius);
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    width: fit-content;
+    box-shadow: 0 6px 18px rgba(5,89,42,0.08);
+    font-family: "DM Sans", sans-serif;
+}
+
+
 
 
 /* Right column-carousel created with Bootstrap */
 
-.feature-figure {
+/* .feature-figure {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
+} */
 
 /* Responsive style for mobile */
 @media (max-width: 900px) {
