@@ -218,6 +218,12 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
+.carousel-caption p small{
+    font: size 0.1em;
+    color: var(--muted);
+    font-style: italic;
+}
+
 .zoomit {
 	animation: zoom-in-out .5s;
 }
