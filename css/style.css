@@ -117,7 +117,7 @@ body {
 } */
 
 /* Hero grid to divide the page in 2 columns */
-.hero{
+.hero {
     padding:2.5rem 0;
 }
 
@@ -202,7 +202,7 @@ body {
 .hero-carousel .carousel-item img {
     height: 100%;
     object-fit: cover;
-    min-height: 420px;
+    min-height: 220px;
 }
 
 /* .feature-figure {
@@ -210,6 +210,43 @@ body {
   align-items: center;
   gap: 1rem;
 } */
+
+.promo-ticker {
+    color:#fff;
+    border-top: 4px solid var(--primary);
+    background: #077336;
+    overflow: hidden;
+    text-align: center;
+}
+.ticker-wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0.35rem 1.25rem;
+}
+.ticker {
+    white-space: nowrap;
+    display: block;
+    will-change: transform;
+    animation: scroll-left 12s linear infinite;
+    color: var(--primary);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    font-family: "DM Sans", sans-serif;
+}
+
+/* keyframes applied based on https://css-tricks.com/almanac/rules/k/keyframes/ */
+@keyframes scroll-left {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Footer */
+.site-footer {
+    padding: 1rem 0 3rem 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-family: "DM Sans", sans-serif;
+}
 
 /* Responsive style for mobile */
 @media (max-width: 900px) {
