@@ -120,9 +120,11 @@ body {
 .hero{
     padding:2.5rem 0;
 }
+
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: var(--text);
     align-items: stretch;
 }
 
@@ -134,8 +136,10 @@ body {
     justify-content: center;
     gap:1.5rem;
     background: rgba(255,255,255,0.7);
-    border-radius: 6px;
-    }
+    border-radius: var(--radius);
+}
+
+
 
 /* Right column-carousel created with Bootstrap */
 
