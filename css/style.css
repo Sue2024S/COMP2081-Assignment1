@@ -189,10 +189,21 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
-
-
-
 /* Right column-carousel created with Bootstrap */
+
+.hero-carousel {
+    align-self: stretch;
+    position: relative;
+    border-left: 6px solid var(--primary);
+    overflow: hidden;
+    background: #fff;
+}
+
+.hero-carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    min-height: 420px;
+}
 
 /* .feature-figure {
   display: flex;
