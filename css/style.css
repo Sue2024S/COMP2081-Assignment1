@@ -1,5 +1,67 @@
 @charset "UTF-8";
 /* Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jura:wght@300..700&display=swap');
+/* Colour palette decided to use based on the logo obtained from Logopond 
+--primary: #05592A (green)
+--bg: #F2F2F2 (secondary/background) */
 
 /* General Styles */
+
+/* Header/Navigation */
+.site-header{
+background: linear-gradient(0deg, rgba(5,89,42,0.03), rgba(5,89,42,0.03));
+border-bottom: 1px solid rgba(0,0,0,0.04);
+padding: 1rem 0;
+}
+.header-inner{
+display: flex;
+align-items: center;
+gap:1rem;
+}
+.logo-wrap{
+    gap:0.25rem;
+}
+.logo{
+    height:36px;
+    width:auto;
+}
+.logo-credit{
+    font-size:0.68rem;
+}
+
+.main-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Hero grid to divide the page in 2 columns */
+.hero{
+    padding:2.5rem 0;
+}
+.hero-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    align-items: stretch;
+}
+
+/* Left column */
+.hero-content{
+    padding:4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1.5rem;
+    background: rgba(255,255,255,0.7);
+    border-radius: 6px;
+    }
+
+/* Right column-carousel created with Bootstrap */
+
+.feature-figure {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
