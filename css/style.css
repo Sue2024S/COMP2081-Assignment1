@@ -139,6 +139,26 @@ body {
     border-radius: var(--radius);
 }
 
+.hero-title {
+    font-family: 'Jura', sans-serif;
+    font-size: clamp(var(--h1-min), 5vw, var(--h1-max));
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0;
+    color: var(--primary);
+}
+
+.subhead {
+    display: block;
+    font-size: 0.55em;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary);
+    opacity: 0.95;
+    margin-top: 0.6rem;
+}
+
 
 
 /* Right column-carousel created with Bootstrap */
