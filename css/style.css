@@ -46,27 +46,36 @@ body {
 }
 
 /* Header/Navigation */
-.site-header{
-background: linear-gradient(0deg, rgba(5,89,42,0.03), rgba(5,89,42,0.03));
-border-bottom: 1px solid rgba(0,0,0,0.04);
-padding: 1rem 0;
+.site-header {
+    background: linear-gradient(0deg, rgba(5,89,42,0.03), rgba(5,89,42,0.03));
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    padding: 1rem 0;
 }
-.header-inner{
-display: flex;
-align-items: center;
-gap:1rem;
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap:1rem;
 }
-.logo-wrap{
+
+/* logo */
+.logo-wrap {
     gap:0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
-.logo{
+
+.logo {
     height:36px;
     width:auto;
 }
-.logo-credit{
+
+.logo-credit {
     font-size:0.68rem;
+    color: var(--muted);
 }
 
+/* nav */
 .main-nav {
   margin-left: auto;
   display: flex;
@@ -78,7 +87,7 @@ gap:1rem;
 .hero{
     padding:2.5rem 0;
 }
-.hero-grid{
+.hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
