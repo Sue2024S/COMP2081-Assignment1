@@ -83,6 +83,22 @@ body {
   gap: 1rem;
 }
 
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: "DM Sans", sans-serif;
+}
+
 /* Hero grid to divide the page in 2 columns */
 .hero{
     padding:2.5rem 0;
